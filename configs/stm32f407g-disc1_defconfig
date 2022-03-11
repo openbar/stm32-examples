@@ -1,2 +1,13 @@
+# Configuration file for the STM32F407G-DISC1 board
+
 build:
-	echo "Nothing to do"
+	${MAKE} -C libopencm3-miniblink V=${OB_VERBOSE}
+
+OB_MANUAL_TARGETS += clean
+clean:
+	${MAKE} -C libopencm3-miniblink clean V=${OB_VERBOSE}
+	${MAKE} -C libopencm3-miniblink/libopencm3 clean V=${OB_VERBOSE}
+
+OB_MANUAL_TARGETS += flash
+flash: build
+	st-flash write libopencm3-miniblink/bin/stm32/stm32f407g-disc1.bin 0x8000000

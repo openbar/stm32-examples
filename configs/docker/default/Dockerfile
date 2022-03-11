@@ -5,8 +5,11 @@ RUN	set -x \
 	&& export DEBIAN_FRONTEND=noninteractive \
 	&& apt update \
 	&& apt install --no-install-recommends -y \
-		build-essential \
 		gawk \
+		gcc-arm-none-eabi \
+		libnewlib-arm-none-eabi \
 		make \
+		python3 \
+		stlink-tools \
 		sudo \
 	&& rm -rf /var/lib/apt/lists/*
