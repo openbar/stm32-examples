@@ -9,7 +9,7 @@ Its purpose is to create a minimal firmware for an STM32F407G-DISC1 board.
 
 ```bash
 # Clone the repository (with submodules)
-git clone --recurse-submodules git://github.com/openbar/stm32-examples
+git clone --recurse-submodules https://github.com/openbar/stm32-examples
 
 # Move to the freshly cloned directory
 cd stm32-examples

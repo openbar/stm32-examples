@@ -1,6 +1,6 @@
 [submodule "third-party/openbar"]
 	path = third-party/openbar
-	url = git://github.com/openbar/openbar
+	url = https://github.com/openbar/openbar
 [submodule "libopencm3-miniblink"]
 	path = libopencm3-miniblink
-	url = git://github.com/libopencm3/libopencm3-miniblink
+	url = https://github.com/libopencm3/libopencm3-miniblink
